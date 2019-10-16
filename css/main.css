@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    /* border: 1px solid green; */
+    /* height: 1000px; */
+    margin-bottom: 64px;
+}
+.main .btn-top{
+    position: fixed;
+    right: 10px;
+    bottom: 84px;
+    background-color: white;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .btn-top .icon{
+    width: 24px;
+    height: 24px;
+    
+}
+.main .btn-top .icon-top{
+    
+}
+/* search-bar部分start */
+.search-bar-top{
+    height: 55px;
+    /* border: 1px solid    red; */
+    background-image:  linear-gradient(90deg,#0af,#0085ff);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.search-bar-top .icon-location{
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+}
+.search-bar-top .place{
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.search-bar-top .icon-arrow-down{
+    width: 8px;
+    height: 5px;
+    vertical-align: middle;
+}
+.search-bar-button{
+    height: 63px;
+    /* border: 1px solid blue; */
+    background-image:  linear-gradient(90deg,#0af,#0085ff);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.search-bar-button .btn-search{
+    flex: 1;
+    height: 44px;
+    margin: 0 20px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar-button .search-icon{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+
+}
+.search-bar-button .placeholder{
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    vertical-align: middle;
+    background-size: contain;
+    margin-left: 5px;
+}
+/* quick-nav部分start */
+    .quick-nav{
+        /* height: 192px; */
+        /* border: 1px solid red;  */
+        padding-bottom: 34px;
+     } 
+    .quick-nav .row{
+        display: flex;
+        justify-content: space-around;
+        padding: 6px 0;
+    }
+    .quick-nav a{
+        display: block;
+        text-decoration: none;
+        color: #666;
+        font-size: 15px;
+        text-align: center;
+    }
+    .quick-nav a img{
+        width: 55px;
+        height: 55px;
+    }
+    /* .quick-nav a div{
+
+    } */
+    .container{
+        padding: 0 10px; 
+    }
+
+    /* banner-first部分start */
+    .banner-first{
+        height: 135px;
+        box-sizing: border-box;/* 连border也计入宽度 */
+        margin-bottom: 5px;
+        background: linear-gradient(0deg,#f4f4f4 5%,#fafafa 95%);
+        padding: 14px 18px;
+    }
+    .banner-first .left{
+        /* border: 1px solid blue; */
+        float: left;
+    }
+    .banner-first .title{
+        font-size: 23px;
+        font-weight: bold;
+
+    }
+    .banner-first .desc{
+        font-size: 17px;
+        color: #777;
+        margin: 3px 0;
+    }
+    .banner-first .btn-buy{
+        font-size: 15px;
+        font-weight: 700;
+        color: #af8260;
+    }
+    .banner-first .right{
+        float: right;
+        width: 173px;
+        height: 115px;
+
+    }
+
+
+    /* banner-first部分end */
+    /* banner-scroll部分start */
+    .banner-scroll{
+        height: 108px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner-scroll .item{
+        height: 108px;
+    }
+    .banner-scroll .tips{
+        position: absolute;
+         bottom: 0;
+         right: 5px;
+         width: 67px;
+         height: 23px;
+         border-radius: 11.5px;
+         background:rgba(0, 0, 0, .5);
+         color: white;
+         font-size: 12px;
+         text-align: center;
+         line-height: 23px;
+
+
+    }
+    /* banner-scroll部分end */
+     
+    /* shops部分start */
+    .shops{
+        /* border: 1px solid red; */
+        height: 1000px;
+    }
+    .title-bar{
+        /* border: 1px solid green; */
+        margin-bottom: 10px 10px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .title-bar::before{
+        display: inline-block;
+        content: "";
+        width: 25px;
+        height: 1px;
+        background: black;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .title-bar::after{
+        display: inline-block;
+        content: "";
+        width: 25px;
+        height: 1px;
+        background: black;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    .filter-bar{
+        /* border: 1px solid red; */
+        /* height: 48px; */
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        margin-bottom: 10px;
+
+    }
+    .filter-bar .item{
+        /* height: 48px; */
+        /* box-flex-group: 1; 让元素随着框得缩小和扩大而伸缩 */
+        flex-grow: 1;/* 让里面的元素以相同的比例出现 */
+        color: #666;
+        text-align: center;
+    }
+    .filter-bar .item span{
+        vertical-align: middle;
+    }
+    .filter-bar .item .icon{
+        vertical-align: middle;
+    }
+    .filter-bar .item .icon-arrow-down{
+        width: 7px;
+        height: 4px;
+    }
+    .filter-bar .item .icon-filter{
+        width: 14px;
+        height: 14px;
+    }
+    .filter-bar .item:first-child{
+        text-align: left;
+    }
+    .filter-bar .item:last-child{
+        text-align: right;
+    }
+    /* 没有搜索结果部分start */
+    .shop-list-container{
+        /* border: 1px solid red; */
+    }
+    .not-found-result{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .shop-list-container .img-not-fond{
+        width: 246px;
+        height: 246px;
+        background-size: contain;
+    }
+    .shop-list-container .not-found-result .title{
+        color: #6a6a6a;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .shop-list-container .not-found-result .desc{
+        color: #999;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .shop-list-container .not-found-result .btn-login{
+        width: 147px;
+        height: 43px;
+        color: white;
+        background-color: #56d176;
+        border-radius: 3px;
+        line-height: 43px;
+        font-size: 14px;
+        display: inline-block;/* 此做法可使其独占一行 */
+        
+    }
+
+
+
+/* footer部分start */
+.footer{
+    height: 60px;
+    background: white;
+    border-top: 1px solid rgb(236, 236, 236);  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5px #ccc; /* 整个块级元素的阴影 */
+   
+}
+.footer .tab-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .tab-menu li{
+    /* border: 1px solid red; */
+    /* display: block; */
+    flex: 1;
+}
+.footer .tab-menu li a{
+    /* border: 1px solid blue; */
+    text-align: center; 
+    display: block;
+    padding: 10px 0;
+    color: #8e8e93;
+    font-size: 14px;
+}
+.footer .tab-menu li a .icon{
+    width: 23px;
+    height: 23px;
+    /* background: red; */
+    display: block;
+    margin: 0 auto 2px auto;
+    /* border: 1px solid red; */
+    background-size: contain;/* 使背景内容完全撑开 */
+    
+}
+.footer .tab-menu li a .icon.icon-home{
+    background-image: url("../icon/tab_item_home.svg");
+}
+.footer .tab-menu li a .icon.icon-found{
+    background-image: url("../icon/tab_item_found.svg");
+}
+.footer .tab-menu li a .icon.icon-order{
+    background-image: url("../icon/tab_item_order.svg");
+}
+.footer .tab-menu li a .icon.icon-me{
+    background-image: url("../icon/tab_item_me.svg");
+}
+.footer .tab-menu li.active a .icon.icon-home{
+    background-image: url("../icon/tab_item_home_active.svg");
+}
+.footer .tab-menu li.active a{
+    color: #0085ff;
+}
+
